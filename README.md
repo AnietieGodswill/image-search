@@ -1,6 +1,7 @@
 # IMAGE SEARCH 
 
 A simple image search app using React
+![](ss.PNG)
 
 ## 👾 API
 
