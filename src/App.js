@@ -1,26 +1,46 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import Imgq from './imgq';
+import ImageDetails from './ImageDetails';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+import './App.css'
+
+
+const apikey = "16320733-1d0bee63b63de51749a41ef3b"
+
+class App extends Component{
+  
+  state = {
+    images: []
+  }
+
+  handleGet =  async(event) => {
+    event.preventDefault()
+    const queries = event.target.searchvalue.value
+    const url = `https://pixabay.com/api/?key=${apikey}&q=${queries}&image_type=photo`
+
+    const req = await fetch(url)
+    
+    const resp = await req.json()
+    this.setState({
+      images:resp.hits
+    })
+    
+  }
+
+ 
+
+  render()
+  {
+    return(
+      <div>
+          <Imgq handleGet = {this.handleGet}></Imgq>
+          <ImageDetails images = {this.state.images}/>
+          
+      </div>
+      
+    )
+  }
 }
 
 export default App;

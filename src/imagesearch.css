@@ -1,0 +1,56 @@
+.imageSearch{
+    margin: 20px;
+    text-align:center;
+    
+}
+.searchbox input{
+    margin: 0 auto;
+    font-size: 30px;
+    width:300px;
+    height: 40px;
+    background:transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;    
+    border-bottom: solid 2px #34495e;
+    color: black;
+    font-family: 'Josefin Sans', sans-serif;
+
+
+}
+.searchbox input:focus{
+    outline:none;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.searchbox button{
+    font-size: 30px;
+    width:10%;
+    height: 30%;
+    margin: 20px;
+    width:150px;
+    height: 40px;
+    background-color: lime;
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    font-family: 'Abel', sans-serif;
+    
+}
+
+.searchbox button:hover{
+   
+    width:10%;
+    height: 30%;
+    margin: 20px;
+    width:150px;
+    height: 40px;
+    background-color: lightgreen;
+    border:none;
+    outline: none;
+    font-family: 'Abel', sans-serif;
+    font-size: 30px;
+    
+    
+}
+
