@@ -1,8 +1,8 @@
 .container {
     border-radius: 1px;
     text-align: center;
-     
- 
+         display: flex;
+    flex-wrap: wrap;
 }
  
 .imagesection {
