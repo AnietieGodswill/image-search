@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 import Imgq from './imgq';
 import ImageDetails from './ImageDetails';
 
-
 import './App.css'
 
-
-const apikey = "your api key"
+const apikey = "API Key Here"
 
 class App extends Component{
   
@@ -27,16 +25,13 @@ class App extends Component{
     })
     
   }
-
- 
-
+  
   render()
   {
     return(
       <div>
           <Imgq handleGet = {this.handleGet}></Imgq>
           <ImageDetails images = {this.state.images}/>
-          
       </div>
       
     )
