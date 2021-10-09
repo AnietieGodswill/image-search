@@ -1,24 +1,19 @@
 .container {
-    border-radius: 1px;
-    text-align: center;
-     
- 
+    border-radius: 1.8px;
+    text-align: center; 
 }
  
 .imagesection {
-   
     max-width: 30%;
     max-height: 300px;
-    border-color: black;
-    
+    border-color: #121212;
 }
   
   
 .imageset {
     margin-bottom: 2rem;
-    color: black;
-    font-size: 20px;
-  
+    color: #000;
+    font-size: 2rem;
 }
   
 .imageset button{
@@ -27,20 +22,16 @@
   height:35px;
   outline: none;
   border-radius: 10px;
-  width:120px;
-  font-weight: 700;
-  
+  width: 110px;
+  font-weight: bold;
 }
 .imageset button:hover{
-  
-    background-color: lightgreen;
+    background-color: #529e7e;
     border:none;
     height:35px;
     outline: none;
     border-radius: 10px;
-    width:120px;
-    
-  
+    width:120px;  
 }
 
 .footer {
@@ -50,9 +41,9 @@
   bottom:0;
   width: 100%;
   height: 40px;
-  background-color: black;
-  color: white;
+  background-color: #121212;
+  color: #e9f2ee;
   text-align: center; 
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: bolder;
+  font-size: 1rem;
 }
